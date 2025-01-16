@@ -1,0 +1,90 @@
+/* Untuk tampilan mobile atau perangkat dengan lebar layar lebih kecil */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px 5%; /* Mengurangi padding untuk layar lebih kecil */
+    }
+
+    /* Tombol Hamburger */
+    #hamburger-responsive {
+        display: block; /* Tampilkan hamburger untuk menu responsif */
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Navbar yang hilang saat perangkat kecil */
+    .navbar .navbar-nav {
+        display: none; /* Sembunyikan navbar menu */
+    }
+
+    /* Navbar Responsif */
+    .navbar-responsive {
+        left: -250px; /* Menyembunyikan navbar responsif */
+        width: 250px; /* Lebar sidebar navbar */
+    }
+
+    /* Ketika navbar responsif aktif */
+    .navbar-responsive.active {
+        left: 0; /* Menampilkan navbar responsif */
+    }
+
+    /* Mengatur tampilan menu untuk navbar responsif */
+    .navbar-nav-responsive {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .navbar-nav-responsive .nav-item-responsive a {
+        padding: 12px 15px;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .navbar-nav-responsive .nav-item-responsive a:hover {
+        background-color: #444;
+    }
+
+    /* Navbar logo */
+    .navbar-logo {
+        font-size: 18px; /* Logo lebih kecil pada perangkat kecil */
+    }
+    
+    /* Extra Section di Navbar (seperti tombol login) */
+    .navbar-extra {
+        display: none; /* Sembunyikan tombol-tombol extra untuk perangkat kecil */
+    }
+}
+
+/* Untuk perangkat yang lebih kecil dari 480px (ponsel sangat kecil) */
+@media (max-width: 480px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px 3%; /* Kurangi padding lebih banyak untuk layar sangat kecil */
+    }
+
+    /* Navbar logo */
+    .navbar-logo {
+        font-size: 16px; /* Logo lebih kecil */
+    }
+
+    /* Tombol Hamburger lebih besar */
+    #hamburger-responsive {
+        font-size: 30px;
+    }
+
+    /* Navbar menu responsif lebih besar */
+    .navbar-nav-responsive .nav-item-responsive a {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .navbar-nav-responsive .nav-item-responsive a:hover {
+        background-color: #444;
+    }
+
+    /* Menyembunyikan bagian ekstra untuk layar sangat kecil */
+    .navbar-extra {
+        display: none;
+    }
+}
